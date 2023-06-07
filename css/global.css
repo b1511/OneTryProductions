@@ -100,6 +100,7 @@ p {
   font-size: 0.8rem;
 }
 
+/*---------------Home page*/
 .container-vid {
   margin: 0;
   padding: 0;
@@ -522,15 +523,6 @@ footer a img {
     margin-left: 100px;
   }
 
-  .hidden {
-    display: flex;
-  }
-  .hide {
-    display: none;
-  }
-  .group-f {
-    flex-direction: row;
-  }
   .info {
     flex-direction: row;
     gap: 30px;
@@ -568,6 +560,15 @@ footer a img {
   h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+  }
+  .hidden {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  .group-f {
+    flex-direction: row;
   }
   .btn {
     font-size: 24px;
