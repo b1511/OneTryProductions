@@ -281,6 +281,7 @@ p {
 }
 
 .photoEl {
+  transition: none;
   height: 130px;
   width: 200px;
 }
