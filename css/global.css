@@ -336,6 +336,7 @@ p {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .iconWrapper img {
@@ -517,6 +518,9 @@ footer a img {
   }
   .btn {
     font-size: 18px;
+  }
+  .field-group {
+    flex-direction: row;
   }
   footer a img {
     width: 60px;
