@@ -285,19 +285,6 @@ p {
 .hidden {
   display: none;
 }
-/*
-.wrapper {
-  width: 320px;
-  height: 120px;
-}
-
-.title-overlay {
-  background-color: rgb(17, 15, 4, 0.8);
-  width: 60%;
-  padding: 66px 10px 10px 10px;
-  transform: translateY(-96px);
-}
-*/
 /**--------------Virtual tour page*/
 .Vtour .container-embed {
   margin: 0;
@@ -481,7 +468,9 @@ footer a img {
   p {
     font-size: 1.1rem;
   }
-
+  .h1-pic {
+    padding-top: 220px;
+  }
   .box img {
     width: 80px;
     margin: -20px 0 0 300px;
