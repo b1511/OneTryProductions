@@ -158,6 +158,7 @@ const urlCommercials = "https://youtube.googleapis.com/youtube/v3/playlistItems?
 const urlEvent = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLEBnbnJyPmKdvPLhSJpZlSfdwKxsv3js5&key=AIzaSyCztXE50AKe8dB_Z-vBk4QR6cGEu-610jk";
 const urlLocations = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLEBnbnJyPmKfsZtQuMSnh6JDxqsbsk9KW&key=AIzaSyCztXE50AKe8dB_Z-vBk4QR6cGEu-610jk";
 const urlSport = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLEBnbnJyPmKcaNczb4foGp6t3HJkOFa-f&key=AIzaSyCztXE50AKe8dB_Z-vBk4QR6cGEu-610jk";
+const urlMusic = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLEBnbnJyPmKcJkb06i0j1u457je-jy0vh&key=AIzaSyCztXE50AKe8dB_Z-vBk4QR6cGEu-610jk";
 
 const addHTML2 = (selector, newContent) => {
   document.querySelector(selector).innerHTML += newContent;
@@ -223,6 +224,26 @@ fetch(urlLocations)
         });
     });
 
+    fetch(urlMusic)
+    .then(res => {
+        return res.json();
+    })
+    .then(data => {
+        data.items.forEach(element => {
+            //vidTitle = element.snippet.title;
+            thumbnail = element.snippet.thumbnails.medium.url;
+            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+            
+            output = `
+            <a data-fancybox="video-gallery-2" href="${vidURL}">
+                <img src="${thumbnail}" class="photoEl">
+            </a>
+            `;
+
+            addHTML2("div#music", output);
+        });
+    });
+
 fetch(urlSport)
     .then(res => {
         return res.json();
@@ -243,13 +264,5 @@ fetch(urlSport)
         });
     });
 
-    /*  div class="wrapper">
-            div class="overlay-thumbnail">
-              <h3>${vidTitle}</h3>
-            </div>
-            <a data-fancybox="video-gallery" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
-            </a>
-        </div>
-            
-     */
+// Lightbox source code https://codepen.io/chaly7500/pen/WPGMKb]
+// YouTube API source https://www.youtube.com/watch?v=K9G3Yc0pw9g&list=LL&index=9&t=1s&ab_channel=Shainu
