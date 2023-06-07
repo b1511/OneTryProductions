@@ -1,4 +1,3 @@
-//Photos and Reviews API requests
 const addHTML = (selector, newContent) => {
   elements = document.querySelectorAll(selector);
   elements.forEach((element) => {
@@ -6,6 +5,7 @@ const addHTML = (selector, newContent) => {
   });
 };
 
+// Review API Requests
 function getPostsHome() {
   const url = 'https://www.bdom.digital/wp-json/wp/v2/posts?tags=8&per_page=3';
   fetch(url)
@@ -16,7 +16,7 @@ function getPostsHome() {
         if (data[i].acf != -1) {
           posts.push(data[i].acf);
         }
-      }     
+      }
       console.log(posts);
       renderPostsHome(posts);
     });
@@ -24,8 +24,8 @@ function getPostsHome() {
 getPostsHome();
 
 function renderPostsHome(posts) {
-  posts.forEach((post,index) => {
-  let newHTML = `
+  posts.forEach((post, index) => {
+    let newHTML = `
   <div class="carousel-item ${index == 0 ? 'active' : ''}">
     <article>
       <p class="light fw-light col-6 rev-text">${post.text}</p>
@@ -34,7 +34,7 @@ function renderPostsHome(posts) {
           <p class="light fw-light small">${post.name}</p>
           <p class="light fw-light small">${post.company}</p>
         </div>
-        <img class="logo-rev" src="${post.logo}" alt="">
+        <img class="logo-rev" src="${post.logo}" alt="logo">
       </div>
       
     </article>
@@ -48,7 +48,6 @@ function renderPostsHome(posts) {
   });
 };
 
-/////////////////////////////////////////////////////////////////////////////////
 function getPostsAbout() {
   const url = 'https://www.bdom.digital/wp-json/wp/v2/posts?tags=8&per_page=10';
   fetch(url)
@@ -59,7 +58,7 @@ function getPostsAbout() {
         if (data[i].acf != -1) {
           posts.push(data[i].acf);
         }
-      }     
+      }
       console.log(posts);
       renderPostsAbout(posts);
     });
@@ -67,8 +66,8 @@ function getPostsAbout() {
 getPostsAbout();
 
 function renderPostsAbout(posts) {
-  posts.forEach((post,index) => {
-  let newHTML = `
+  posts.forEach((post, index) => {
+    let newHTML = `
   <div class="carousel-item ${index == 0 ? 'active' : ''}">
     <article>
       <p class="light fw-light col-8 rev-text">${post.text}</p>
@@ -77,7 +76,7 @@ function renderPostsAbout(posts) {
           <p class="light fw-light small">${post.name}</p>
           <p class="light fw-light small">${post.company}</p>
         </div>
-        <img class="logo-rev" src="${post.logo}" alt="">
+        <img class="logo-rev" src="${post.logo}" alt="logo">
       </div>
       
     </article>
@@ -92,12 +91,12 @@ function renderPostsAbout(posts) {
 };
 
 
-
+// Photo API Requests
 function getPostsAerial() {
   const url = 'https://www.bdom.digital/wp-json/wp/v2/posts?tags=12&per_page=16';
   fetch(url)
     .then((response) => response.json())
-    .then((data) => {   
+    .then((data) => {
       renderPostsAerial(data);
     });
 }
@@ -106,18 +105,17 @@ getPostsAerial();
 function renderPostsAerial(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="aerial"></a>
     `;
     addHTML("div#aerial", newHTML);
   }
 }
 
-///////////////////////////////////////////////////////////////////////////////////
 function getPostsProd() {
   const url = 'https://www.bdom.digital/wp-json/wp/v2/posts?tags=13&per_page=16';
   fetch(url)
     .then((response) => response.json())
-    .then((data) => {   
+    .then((data) => {
       renderPostsProd(data);
     });
 }
@@ -126,18 +124,17 @@ getPostsProd();
 function renderPostsProd(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="production"></a>
     `;
     addHTML("div#production", newHTML);
   }
 }
 
-///////////////////////////////////////////////////////
 function getPostsAdv() {
   const url = 'https://www.bdom.digital/wp-json/wp/v2/posts?tags=14&per_page=16';
   fetch(url)
     .then((response) => response.json())
-    .then((data) => {   
+    .then((data) => {
       renderPostsAdv(data);
     });
 }
@@ -146,7 +143,7 @@ getPostsAdv();
 function renderPostsAdv(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="advertising"></a>
     `;
     addHTML("div#advertising", newHTML);
   }
@@ -165,109 +162,109 @@ const addHTML2 = (selector, newContent) => {
 }
 
 fetch(urlCommercials)
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        data.items.forEach(element => {
-            //vidTitle = element.snippet.title;
-            thumbnail = element.snippet.thumbnails.medium.url;
-            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
-            
-            output = `
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.items.forEach(element => {
+      //vidTitle = element.snippet.title;
+      thumbnail = element.snippet.thumbnails.medium.url;
+      vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+
+      output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
+                <img src="${thumbnail}" class="photoEl" alt="commercials">
             </a>
             `;
 
-            addHTML2("div#commercials", output);
-        });
+      addHTML2("div#commercials", output);
     });
+  });
 
 fetch(urlEvent)
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        data.items.forEach(element => {
-            //vidTitle = element.snippet.title;
-            thumbnail = element.snippet.thumbnails.medium.url;
-            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
-            
-            output = `
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.items.forEach(element => {
+      //vidTitle = element.snippet.title;
+      thumbnail = element.snippet.thumbnails.medium.url;
+      vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+
+      output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
+                <img src="${thumbnail}" class="photoEl" alt="events">
             </a>
             `;
 
-            addHTML2("div#event", output);
-        });
+      addHTML2("div#event", output);
     });
+  });
 
 fetch(urlLocations)
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        data.items.forEach(element => {
-            //vidTitle = element.snippet.title;
-            thumbnail = element.snippet.thumbnails.medium.url;
-            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
-            
-            output = `
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.items.forEach(element => {
+      //vidTitle = element.snippet.title;
+      thumbnail = element.snippet.thumbnails.medium.url;
+      vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+
+      output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
+                <img src="${thumbnail}" class="photoEl" alt="locations">
             </a>
             `;
 
-            addHTML2("div#locations", output);
-        });
+      addHTML2("div#locations", output);
     });
+  });
 
-    fetch(urlMusic)
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        data.items.forEach(element => {
-            //vidTitle = element.snippet.title;
-            thumbnail = element.snippet.thumbnails.medium.url;
-            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
-            
-            output = `
+fetch(urlMusic)
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.items.forEach(element => {
+      //vidTitle = element.snippet.title;
+      thumbnail = element.snippet.thumbnails.medium.url;
+      vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+
+      output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
+                <img src="${thumbnail}" class="photoEl" alt="music">
             </a>
             `;
 
-            addHTML2("div#music", output);
-        });
+      addHTML2("div#music", output);
     });
+  });
 
 fetch(urlSport)
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        data.items.forEach(element => {
-            vidTitle = element.snippet.title;
-            thumbnail = element.snippet.thumbnails.medium.url;
-            vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
-            
-            output = `
+  .then(res => {
+    return res.json();
+  })
+  .then(data => {
+    data.items.forEach(element => {
+      vidTitle = element.snippet.title;
+      thumbnail = element.snippet.thumbnails.medium.url;
+      vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
+
+      output = `
             <a class="big-size" data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl">
+                <img src="${thumbnail}" class="photoEl" alt="sport">
             </a>
             `;
 
-            addHTML2("div#sport", output);
-        });
+      addHTML2("div#sport", output);
     });
+  });
 
 const toggle = document.getElementById('toggle');
 const title = document.getElementById('title');
 
-toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function () {
   title.classList.toggle('hide');
 });
 

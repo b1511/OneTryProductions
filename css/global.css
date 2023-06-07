@@ -33,23 +33,6 @@ section {
   margin-bottom: 40px;
 }
 
-/* .parallax_section {
-    height: 900px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .parallax_section-1 {
-    background-image: url('../img/boro_bg.png');
-  }
-  .parallax_section-2 {
-    background-image: url('../img/boro_mountains.png');
-  }
-  .parallax_section-3 {
-    background-image: url('../img/boro_front.png');
-  }*/
-
-
 .navbar {
   background-color: var(--black);
 }
