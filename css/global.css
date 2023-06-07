@@ -481,10 +481,6 @@ footer a img {
     font-size: 1.1rem;
   }
 
-  .accordion-body img:hover {
-    width: 210px;
-  }
-
   .box img {
     width: 80px;
     margin: -20px 0 0 300px;
