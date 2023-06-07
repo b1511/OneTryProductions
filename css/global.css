@@ -281,6 +281,8 @@ p {
 }
 
 .photoEl {
+  height: 130px;
+  width: 200px;
   transition: 0.3s;
 }
 
@@ -478,12 +480,9 @@ footer a img {
   p {
     font-size: 1.1rem;
   }
-  .accordion-body img {
-    width: 170px;
-  }
 
   .accordion-body img:hover {
-    width: 190px;
+    width: 210px;
   }
 
   .box img {
@@ -575,7 +574,7 @@ footer a img {
     font-size: 24px;
     height: 70px;
   }
-  .accordion-button, label{
+  .accordion-button label{
     font-size: 30px;
   }
 }
