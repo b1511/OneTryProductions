@@ -455,6 +455,8 @@ footer img {
 
 footer a {
   margin: 20px;
+  text-decoration: none;
+  color: var(--ligthG);
 }
 
 footer a img {
