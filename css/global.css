@@ -241,13 +241,13 @@ p {
   background-size: cover;
 }
 .container-hero-project {
-  background-image: url("../img/project_hero.jpg");
+  background-image: url("../img/project-hero.jpg");
 }
 .container-hero-about {
-  background-image: url("../img/about_hero.jpg");
+  background-image: url("../img/about-hero.jpg");
 }
 .container-hero-contact {
-  background-image: url("../img/contact_hero.jpg");
+  background-image: url("../img/contact-hero.jpg");
 }
 
 .accordion-header {
