@@ -236,11 +236,18 @@ p {
 }
 
 .container-hero {
-  height: 400px;
-  background-image: url("../img/proejct_hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container-hero-project {
+  background-image: url("../img/project_hero.jpg");
+}
+.container-hero-about {
+  background-image: url("../img/about_hero.jpg");
+}
+.container-hero-contact {
+  background-image: url("../img/contact_hero.jpg");
 }
 
 .accordion-header {
