@@ -106,7 +106,7 @@ getPostsAerial();
 function renderPostsAerial(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
     `;
     addHTML("div#aerial", newHTML);
   }
@@ -126,7 +126,7 @@ getPostsProd();
 function renderPostsProd(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
     `;
     addHTML("div#production", newHTML);
   }
@@ -146,7 +146,7 @@ getPostsAdv();
 function renderPostsAdv(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}"></a>
     `;
     addHTML("div#advertising", newHTML);
   }
@@ -174,7 +174,7 @@ fetch(urlCommercials)
             vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
             
             output = `
-            <a data-fancybox="video-gallery" href="${vidURL}">
+            <a data-fancybox="video-gallery-2" href="${vidURL}">
                 <img src="${thumbnail}" class="photoEl">
             </a>
             `;
@@ -194,7 +194,7 @@ fetch(urlEvent)
             vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
             
             output = `
-            <a data-fancybox="video-gallery" href="${vidURL}">
+            <a data-fancybox="video-gallery-2" href="${vidURL}">
                 <img src="${thumbnail}" class="photoEl">
             </a>
             `;
@@ -214,7 +214,7 @@ fetch(urlLocations)
             vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
             
             output = `
-            <a data-fancybox="video-gallery" href="${vidURL}">
+            <a data-fancybox="video-gallery-2" href="${vidURL}">
                 <img src="${thumbnail}" class="photoEl">
             </a>
             `;
@@ -234,7 +234,7 @@ fetch(urlSport)
             vidURL = 'https://www.youtube.com/watch?v=' + element.snippet.resourceId.videoId;
             
             output = `
-            <a class="big-size" data-fancybox="video-gallery" href="${vidURL}">
+            <a class="big-size" data-fancybox="video-gallery-2" href="${vidURL}">
                 <img src="${thumbnail}" class="photoEl">
             </a>
             `;
