@@ -268,7 +268,7 @@ const toggle = document.getElementById('toggle');
 const title = document.getElementById('title');
 
 toggle.addEventListener('click', function() {
-  title.classList.toggle('hidden');
+  title.classList.toggle('hide');
 });
 
 // Lightbox source code https://codepen.io/chaly7500/pen/WPGMKb]
