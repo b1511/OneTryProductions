@@ -493,6 +493,9 @@ footer a img {
   .btn {
     height: 50px;
   }
+  .fancybox-caption {
+    font-size: 20px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -537,7 +540,7 @@ footer a img {
     width: 120px;
   }
   h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   p {
     font-size: 1.5rem;
@@ -569,6 +572,10 @@ footer a img {
 
   h2 {
     font-size: 3.4rem;
+  }
+
+  .fancybox-image {
+    height: 90% !important;
   }
 }
 
