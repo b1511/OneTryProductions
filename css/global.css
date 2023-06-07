@@ -327,6 +327,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-self: center;
 }
 .info .text img {
   width: 20px;
