@@ -430,6 +430,7 @@ footer {
 
 footer .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   list-style-type: none;
   margin-bottom: 20px;
@@ -499,6 +500,9 @@ footer a img {
   .fancybox-caption {
     font-size: 20px !important;
   } 
+  footer .container {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
