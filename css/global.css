@@ -219,8 +219,7 @@ p {
 }
 
 .h1-pic {
-  padding-top: 180px;
-  transform: translateY(-35%);
+  padding-top: 20% 0;
 }
 
 .container-hero {
@@ -468,9 +467,6 @@ footer a img {
   p {
     font-size: 1.1rem;
   }
-  .h1-pic {
-    padding-top: 220px;
-  }
   .box img {
     width: 80px;
     margin: -20px 0 0 300px;
@@ -504,9 +500,6 @@ footer a img {
   h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-  .h1-pic {
-    padding-top: 280px;
   }
   .boxes {
     flex-direction: row;
@@ -552,9 +545,6 @@ footer a img {
 
   .h1-vid {
     top: 20%;
-  }
-  .h1-pic {
-    padding-top: 370px;
   }
   h2 {
     font-size: 3rem;
