@@ -264,5 +264,12 @@ fetch(urlSport)
         });
     });
 
+const toggle = document.getElementById('toggle');
+const title = document.getElementById('title');
+
+toggle.addEventListener('click', function() {
+  title.classList.toggle('hidden');
+});
+
 // Lightbox source code https://codepen.io/chaly7500/pen/WPGMKb]
 // YouTube API source https://www.youtube.com/watch?v=K9G3Yc0pw9g&list=LL&index=9&t=1s&ab_channel=Shainu
