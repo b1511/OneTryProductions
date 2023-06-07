@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Video and Photo Production Company">
+  <meta name="keywords" content="video, photo, contact">
+  <title>One Try Productions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/global.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/form.js"></script>
+</head>
+
+<body>
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" width="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Virtual Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Hero-->
+    <div class="container container-hero text-center">
+      <div class="row w-100">
+        <h1 class="fw-light light h1-pic">CREATE <span class="fw-bold yellow">SOMETHING SPECIAL</span> WITH US</h1>
+      </div>
+    </div>
+  </header>
+  <main class="main-spacing">
+    <section class="container">
+      <h2 class="yellow fw-bold space">FOLLOW OUR LATEST UPDATES HERE:</h2>
+      <div class="icons">
+        <div class="iconWrapper btn-outline-primary">
+          <img src="./img/FB.svg" alt="icon">
+        </div>
+        <div class="iconWrapper">
+          <img src="./img/YT.svg" alt="icon">
+        </div>
+        <div class="iconWrapper">
+          <img src="./img/IG.svg" alt="icon">
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="yellow fw-bold">CONTACT US</h2>
+      <p class="light fw-light">Lorem Ipsum is simply dummy text of the printing and typesettit</p>
+      <div class="contacts">
+        <div class="group">
+          <div class="heading">
+            <h3 class="yellow fw-bold">PHONE</h3>
+            <img src="./img/phone.svg" alt="icon">
+          </div>
+          <p class="light fw-light">+359 886 53 40 13</p>
+        </div>
+        <div class="group">
+          <div class="heading">
+            <h3 class="yellow fw-bold">PHONE</h3>
+            <img src="./img/mail.svg" alt="icon">
+          </div>
+          <p class="light fw-light">ONETRYPROD@GMAIL.COM</p>
+        </div>
+        <div class="group">
+          <div class="heading">
+            <h3 class="yellow fw-bold">PHONE</h3>
+            <img src="./img/globe.svg" alt="icon">
+          </div>
+          <p class="light fw-light">European-based, but always on the go. Get in touch and we will come wherever you
+            need us.</p>
+        </div>
+      </div>
+      <div class="flex items-center min-h-screen">
+        <div class="container mx-auto">
+          <div class="max-w-xl mx-auto my-10 rounded-md">
+            <div class="m-7">
+              <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation"
+                novalidate>
+                <input type="hidden" name="access_key" value="4c93afa6-e69d-4b64-8f84-126961c14a26" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                <div class="flex mb-6 space-x-4 field-group">
+                  <div class="w-full md:w-1/2 field">
+                    <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400 yellow">First
+                      Name</label>
+                    <input type="text" name="name" id="first_name" placeholder="John" required
+                      class="w-full px-3 py-2 placeholder-gray-300" />
+                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                      Please provide your first name.
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 field">
+                    <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400 yellow">Last
+                      Name</label>
+                    <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                      class="w-full px-3 py-2 placeholder-gray-300" />
+                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                      Please provide your last name.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex mb-6 space-x-4 field-group">
+                  <div class="w-full md:w-1/2 field">
+                    <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400 yellow">Email
+                      Address</label>
+                    <input type="email" name="email" id="email" placeholder="you@company.com" required
+                      class="w-full px-3 py-2 placeholder-gray-300" />
+                    <div class="empty-feedback text-red-400 text-sm mt-1">
+                      Please provide your email address.
+                    </div>
+                    <div class="invalid-feedback text-red-400 text-sm mt-1">
+                      Please provide a valid email address.
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 field">
+                    <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400 yellow">Phone
+                      Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+                      class="w-full px-3 py-2 placeholder-gray-300" />
+
+                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                      Please provide your phone number.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-6 field">
+                  <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400 yellow">Your
+                    Message</label>
+
+                  <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                    class="w-full px-3 py-2 placeholder-gray-300" required></textarea>
+                  <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                    Please enter your message.
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <button type="submit" class="w-full btn btn-outline-primary col-sm-4">
+                    Send Message
+                  </button>
+                </div>
+                <p class="text-base text-center text-gray-400" id="result"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h1 class="light fw-bold"><span class="yellow">ONE TRY PRODUCTIONS</span><br>
+        GOT YOUR ANSWERS!</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              How long does it takes to make video project?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fw-light light">The duration of your project will be influenced by various factors such as the
+                number of videos you plan to create, the length and complexity of each video, and the promptness of your
+                team in providing feedback during the process. In general, a standard production timeframe can range
+                from a few weeks to a few months for completion. If you have urgent deadlines, we can often accommodate
+                expedited turnarounds, so please inform our team about any time constraints, allowing us to establish a
+                suitable timeline. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How many videos do I need?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fw-light light">The choice between producing a single video or a series of videos depends on
+                your objective and budget. While having at least one video is undoubtedly better than having none,
+                multiple videos are often more impactful. It is a common mistake for clients to attempt to cram
+                excessive information into a single video, which can overwhelm and frustrate viewers. Our recommendation
+                is to maintain a single key goal or focus per video. Our Producers will collaborate with you to devise a
+                strategy that aligns with your organization's goals and constraints, ensuring a sensible approach is
+                taken. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What should be the next step after creating video material?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fw-light light">You have the flexibility to publish your video on a wide range of platforms. We
+                will collaborate with you to determine a distribution strategy that is in line with your goals. Our
+                clients commonly share their videos on various platforms, including website and product pages, social
+                media platforms, OTT (streaming) channels, broadcast TV, and other channels that complement their video
+                marketing strategies. Essentially, you have the freedom to choose the platforms that best suit your
+                video's intended audience and maximize its reach. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              I know what I want, can you just film and edit it?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fw-light light">Certainly! We fully accommodate both scenarios. While some clients entrust us
+                with developing a creative concept based on our video expertise, others already have a detailed brief
+                and seek a reliable execution partner. We have successfully collaborated with numerous world-class
+                companies who initially approached us with their specific requirements. In such cases, our role is to
+                bring your creative vision to life and surpass your highest expectations. Rest assured, we always
+                deliver on our promises. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              In what regions do you work?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fw-light light">We mainly work in Bulgaria but the borders do not hold us here, so we are open
+                to any opportunity of working worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer>
+    <hr class="light hide">
+    <a class="container" href="index.html"><img src="./img/logo.png" width="40px"></a>
+    <div class="container">
+      <div class="group-f group-f-text">
+        <li class="light fw-light">ONETRYPROD@GMAIL.COM</li>
+        <li class="light fw-light">+359 886 53 40 13</li>
+      </div>
+      <div class="group-f hidden">
+        <li class="light fw-light">HOME</li>
+        <li class="light fw-light">PROJECTS</li>
+        <li class="light fw-light">VIRTUAL TOUR</li>
+        <li class="light fw-light">ABOUT</li>
+        <li class="light fw-light">CONTACT</li>
+      </div>
+    </div>
+    <hr class="light hidden">
+    <div class="container">
+      <div class="group-f group-f-text">
+        <li class="light fw-light">TERMS AND SERVICES</li>
+        <li class="light fw-light">COOKIES</li>
+      </div>
+      <div class="group-f group-f-icons">
+        <li><img src="./img/FB-xs.svg" alt="icon"></li>
+        <li><img src="./img/YT-xs.svg" alt="icon"></li>
+        <li><img src="./img/IG-xs.svg" alt="icon"></li>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
