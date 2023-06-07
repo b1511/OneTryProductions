@@ -150,6 +150,10 @@ p {
   margin-bottom: 20px;
 }
 
+.h2-space {
+  margin-bottom: 50px;
+}
+
 .boxes {
   display: flex;
   flex-direction: column;
