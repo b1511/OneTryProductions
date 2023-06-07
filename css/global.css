@@ -233,6 +233,7 @@ p {
 
 .h1-pic {
   padding-top: 180px;
+  transform: translateY(-35%);
 }
 
 .container-hero {
