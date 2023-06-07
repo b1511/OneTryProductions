@@ -453,6 +453,7 @@ footer img {
 
 .group-f-icons {
   align-items: center;
+  margin-top: 20px;
 }
 
 footer a {
@@ -502,6 +503,9 @@ footer a img {
   } 
   footer .container {
     flex-direction: row;
+  }
+  .group-f-icons {
+    margin-top: 0;
   }
 }
 
