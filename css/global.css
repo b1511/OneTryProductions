@@ -521,9 +521,6 @@ footer a img {
   .field-group {
     flex-direction: row;
   }
-  footer a img {
-    width: 60px;
-  }
 }
 
 @media (min-width: 992px) {
