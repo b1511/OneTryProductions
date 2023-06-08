@@ -589,9 +589,3 @@ footer a img {
     height: 90% !important;
   }
 }
-
-@media (min-width: 1400px) {
-  h1 {
-    font-size: 6rem;
-  }
-}
