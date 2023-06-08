@@ -54,7 +54,6 @@ h1 {
   position: absolute;
   top: 10%;
   left: 15%;
-  padding-top: 13%;
 }
 
 .container-fluid {
@@ -587,5 +586,10 @@ footer a img {
 
   .fancybox-image {
     height: 90% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .h1-vid {
+    padding-top: 13%;
   }
 }
