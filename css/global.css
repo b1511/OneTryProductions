@@ -286,7 +286,7 @@ p {
 .photoEl {
   height: 130px;
   width: 200px;
-  transition: 1s;
+  transition: 0.5s;
 }
 .photoEl:hover {
   opacity: 0.3;
