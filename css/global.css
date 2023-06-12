@@ -44,6 +44,10 @@ section {
 .nav-link {
   color: var(--ligthG) !important;
   font-size: 1.2rem;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: var(--yellow) !important;
 }
 
 #onetry-nav .navbar-expand-lg .navbar-collapse {
@@ -115,7 +119,7 @@ header video {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0 10px;
 }
 
