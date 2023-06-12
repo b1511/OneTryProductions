@@ -32,7 +32,7 @@ function renderPostsHome(posts) {
       <div class="rev-info">
         <div class="text-group">
           <em><p class="light fw-light small">${post.name}</p></em>
-          <p class="light fw-light small">${post.company}</p>
+          <em><p class="light fw-light small">${post.company}</p></em>
         </div>
         <img class="logo-rev" src="${post.logo}" alt="logo">
       </div>
@@ -74,7 +74,7 @@ function renderPostsAbout(posts) {
       <div class="rev-info">
         <div class="text-group">
           <em><p class="light fw-light small">${post.name}</p></em>
-          <p class="light fw-light small">${post.company}</p>
+          <em><p class="light fw-light small">${post.company}</p></em>
         </div>
         <img class="logo-rev" src="${post.logo}" alt="logo">
       </div>
