@@ -127,6 +127,7 @@ p {
 .btn {
   color: var(--yellow) !important;
   border-color: var(--yellow) !important;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -450,9 +451,6 @@ footer a {
 
 /**--------------Media queries*/
 @media (min-width: 576px) {
-  section {
-    margin-bottom: 80px;
-  }
   h1 {
     font-size: 1.7rem;
   }
