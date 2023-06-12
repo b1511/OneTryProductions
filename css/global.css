@@ -162,7 +162,7 @@ header video {
   text-align: left;
   border-radius: 10px;
   background-color: rgba(228, 228, 228, 0.5);
-  padding: 24px;
+  padding: 24px 24px 10px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
