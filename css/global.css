@@ -46,6 +46,11 @@ section {
   font-size: 1.2rem;
 }
 
+#onetry-nav .navbar-expand-lg .navbar-collapse {
+  flex-basis: unset;
+  flex-grow: unset;
+}
+
 h1 {
   font-size: 1.2rem;
 }
@@ -270,7 +275,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
   margin: 0 auto;
 }
@@ -567,6 +572,8 @@ footer a img {
   .accordion-button label{
     font-size: 30px;
   }
+
+ 
 }
 
 @media (min-width: 1200px) {
