@@ -89,7 +89,7 @@ p {
   font-size: 0.8rem;
 }
 /*---------------Home page*/
-.header video {
+header video {
   opacity: 0.2;
 }
 .container-vid {
