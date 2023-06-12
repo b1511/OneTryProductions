@@ -234,7 +234,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.2;
 }
 .container-hero-project {
   background-image: url("../img/project-hero.jpg");
