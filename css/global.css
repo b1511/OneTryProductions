@@ -434,7 +434,7 @@ footer .group-f {
   flex-direction: column;
 }
 
-footer img {
+footer .group-f-icons img {
   width: 30px;
 }
 
@@ -447,10 +447,6 @@ footer a {
   margin: 20px;
   text-decoration: none;
   color: var(--ligthG);
-}
-
-footer a img {
-  width: 40px;
 }
 
 /**--------------Media queries*/
