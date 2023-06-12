@@ -36,6 +36,7 @@ section {
 .navbar {
   background-color: var(--black);
   z-index: 3;
+  padding: 0;
 }
 
 .navbar-collapse {
@@ -488,9 +489,6 @@ footer a {
 }
 
 @media (min-width: 768px) {
-  section {
-    margin-bottom: 100px;
-  }
   h1 {
     font-size: 2.8rem;
   }
@@ -570,9 +568,6 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-  section {
-    margin-bottom: 120px;
-  }
   h1 {
     font-size: 4rem;
   }
