@@ -163,6 +163,9 @@ header video {
   border-radius: 10px;
   background-color: rgba(228, 228, 228, 0.5);
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .box img {
