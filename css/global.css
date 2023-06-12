@@ -35,6 +35,7 @@ section {
 
 .navbar {
   background-color: var(--black);
+  z-index: 3;
 }
 
 .navbar-collapse {
@@ -71,7 +72,6 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  text-align: right;
 }
 p {
   font-size: 0.9rem;
@@ -160,7 +160,6 @@ p {
 }
 
 .box img {
-  margin: -20px 0 0 180px;
   width: 120px;
 }
 
@@ -471,7 +470,6 @@ footer a {
   }
   .box img {
     width: 80px;
-    margin: -20px 0 0 300px;
   }
   .overlay-grid {
     padding-top: 15%;
@@ -506,10 +504,6 @@ footer a {
   .boxes {
     flex-direction: row;
     gap: 30px;
-  }
-
-  .box img {
-    margin-left: 100px;
   }
   
   .info {
