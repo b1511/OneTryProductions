@@ -88,8 +88,13 @@ p {
 .small {
   font-size: 0.8rem;
 }
-
+.container-hero {
+  opacity: 0.2;
+}
 /*---------------Home page*/
+.header video {
+  opacity: 0.2;
+}
 .container-vid {
   margin: 0;
   padding: 0;
