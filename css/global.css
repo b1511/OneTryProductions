@@ -302,7 +302,6 @@ header video {
 .Vtour .container-info {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 .Vtour .container iframe {
   width: 100vw;
