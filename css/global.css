@@ -572,7 +572,9 @@ footer a img {
   .accordion-button label{
     font-size: 30px;
   }
-
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
  
 }
 
