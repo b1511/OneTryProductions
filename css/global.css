@@ -84,7 +84,7 @@ p {
 }
 
 .yellow {
-  color: var(--yellow);
+  color: var(--yellow) !important;
 }
 
 .small {
