@@ -500,6 +500,9 @@ footer a {
     font-size: 2rem;
     margin-bottom: 20px;
   }
+  .space {
+    margin-bottom: 40px;
+  }
   .boxes {
     flex-direction: row;
     gap: 30px;
