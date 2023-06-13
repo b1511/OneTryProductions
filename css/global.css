@@ -354,7 +354,6 @@ header video {
   border-radius: 8px;
   width: 60px;
   height: 60px;
-  margin-bottom: 5px;
 }
 
 .iconWrapper img:hover {
@@ -524,7 +523,7 @@ footer a {
   .btn {
     font-size: 18px;
   }
-  .accordion-button {
+  .accordion-button, form label {
     font-size: 1.5rem;
   }
   .field-group {
@@ -568,9 +567,6 @@ footer a {
   }
   .group-f {
     flex-direction: row;
-  }
-  .accordion-button label{
-    font-size: 30px;
   }
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
