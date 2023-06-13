@@ -525,6 +525,9 @@ footer a {
   .btn {
     font-size: 18px;
   }
+  .accordion-button {
+    font-size: 1.5rem;
+  }
   .field-group {
     flex-direction: row;
   }
