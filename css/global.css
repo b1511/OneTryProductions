@@ -61,7 +61,7 @@ h1 {
 
 .h1-vid {
   position: absolute;
-  top: 10%;
+  top: 23%;
   left: 15%;
 }
 
@@ -466,7 +466,7 @@ footer a {
     font-size: 1.7rem;
   }
   .h1-vid {
-    top: 15%;
+    top: 30%;
   }
   h2 {
     font-size: 1.5rem;
@@ -552,7 +552,7 @@ footer a {
   }
 
   .h1-vid {
-    top: 20%;
+    top: 35%;
   }
   h2 {
     font-size: 3rem;
@@ -595,7 +595,4 @@ footer a {
   .fancybox-image {
     height: 90% !important;
   }
-}
-@media (min-width: 1400px) {
-  
 }
