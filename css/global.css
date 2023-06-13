@@ -436,13 +436,13 @@ footer .container {
 
 footer .group-f {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
 }
 
 .group-f-text {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 footer .group-f-icons img {
