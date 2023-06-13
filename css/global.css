@@ -358,7 +358,7 @@ header video {
   height: 60px;
 }
 
-.iconWrapper:hover {
+.iconWrapper img:hover {
   background-color: var(--yellow);
 }
 
