@@ -523,7 +523,7 @@ footer a {
     gap: 30px;
   }
   .btn {
-    font-size: 16px;
+    font-size: 18px;
   }
   .field-group {
     flex-direction: row;
@@ -566,10 +566,6 @@ footer a {
   }
   .group-f {
     flex-direction: row;
-  }
-  .btn {
-    font-size: 24px;
-    height: 70px;
   }
   .accordion-button label{
     font-size: 30px;
