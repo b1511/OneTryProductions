@@ -133,6 +133,7 @@ header video {
   color: var(--yellow) !important;
   border-color: var(--yellow) !important;
   margin-top: 10px;
+  width: fit-content;
 }
 
 .btn:hover {
