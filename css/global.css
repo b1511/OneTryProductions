@@ -297,7 +297,7 @@ header video {
   transition: 0.3s;
 }
 .photoEl:hover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .hidden {
