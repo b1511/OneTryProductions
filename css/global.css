@@ -461,7 +461,7 @@ footer a {
 footer a:hover {
   color: var(--yellow);
 }
-footer .container-logo, footer .group-f-text a {
+footer .group-f-text a {
   margin: 20px;
 }
 
