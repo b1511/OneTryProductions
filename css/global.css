@@ -351,8 +351,7 @@ header video {
 }
 
 .iconWrapper img {
-  width: 48px;
-  padding: auto;
+  padding: 7px;
   background-color: var(--ligthG);
   border-radius: 8px;
   width: 60px;
