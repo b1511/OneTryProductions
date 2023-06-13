@@ -343,10 +343,6 @@ header video {
 }
 
 .iconWrapper {
-  background-color: var(--ligthG);
-  border-radius: 8px;
-  width: 60px;
-  height: 60px;
   margin: auto;
   display: flex;
   align-content: center;
@@ -357,6 +353,10 @@ header video {
 .iconWrapper img {
   width: 48px;
   padding: auto;
+  background-color: var(--ligthG);
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
 }
 
 .iconWrapper:hover {
@@ -411,6 +411,7 @@ form {
 .heading img {
   width: 25px;
   height: 25px;
+  margin-top: 5px;
 }
 
 .contacts {
