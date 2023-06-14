@@ -56,6 +56,14 @@ section {
   flex-grow: unset;
 }
 
+.navbar-toggler {
+  color: var(--yellow) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../img/bg_menu.svg) !important;
+}
+
 h1 {
   font-size: 1.2rem;
 }
