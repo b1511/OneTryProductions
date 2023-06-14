@@ -64,6 +64,7 @@ h1 {
   position: absolute;
   top: 23%;
   left: 15%;
+  margin-top: -40px;
 }
 
 .container-fluid {
@@ -250,6 +251,10 @@ header video {
 }
 .container-hero-contact {
   background-image: url("../img/contact-hero.jpg");
+}
+
+.container-hero .row {
+  margin: 0;
 }
 
 .accordion-header {
@@ -478,6 +483,11 @@ footer .container-logo img {
 }
 
 /**--------------Media queries*/
+@media (min-width: 400px) {
+  .h1-vid {
+    margin-top: 0;
+  }
+}
 @media (min-width: 576px) {
   h1 {
     font-size: 1.7rem;
