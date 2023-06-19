@@ -488,6 +488,10 @@ footer .group-f {
   gap: 10px;
 }
 
+.contact-icons {
+  margin-left: 10px;
+}
+
 .group-f-icons {
   align-items: center;
   margin-top: 20px;
