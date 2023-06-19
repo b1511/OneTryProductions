@@ -140,15 +140,16 @@ header video {
 }
 
 .btn {
-  color: var(--yellow) !important;
+  color: var(--darkG) !important;
+  background-color: var(--yellow) !important;
   border-color: var(--yellow) !important;
   margin-top: 10px;
   width: fit-content;
+  border-radius: 12px;
 }
 
 .btn:hover {
-  background-color: var(--yellow) !important;
-  color: var(--darkG) !important;
+  background-color: var(--ligthG) !important;
 }
 
 .space {
