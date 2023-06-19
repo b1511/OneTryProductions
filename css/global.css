@@ -435,6 +435,10 @@ textarea {
   color: #E4E4E4;
 }
 
+.submit {
+  margin: 0 auto;
+}
+
 .heading {
   display: flex;
   flex-direction: row;
