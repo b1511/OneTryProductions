@@ -285,11 +285,15 @@ header video {
   background-color: var(--darkG) !important;
   color: var(--yellow) !important;
   padding: 10px;
+  transition: all 0.5s;
 }
 
 .accordion-button::after {
   background-image: url('../img/arrow-down.svg');
   transition: all 0.5s;
+}
+.accordion-button:hover {
+  transform: scale(1.04);
 }
 
 .accordion-button:not(.collapsed)::after {
