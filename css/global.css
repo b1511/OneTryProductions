@@ -301,6 +301,9 @@ header video {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.projects-acc {
   margin: 0 auto;
 }
 
