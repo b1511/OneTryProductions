@@ -420,6 +420,10 @@ form {
   gap: 30px;
 }
 
+::placeholder {
+  color: #E4E4E4;
+}
+
 .heading {
   display: flex;
   flex-direction: row;
