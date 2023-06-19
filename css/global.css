@@ -140,7 +140,8 @@ header video {
 }
 
 .title-center {
-  margin: 0 auto
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .btn {
   color: var(--darkG) !important;
