@@ -150,6 +150,7 @@ header video {
 
 .btn:hover {
   background-color: var(--ligthG) !important;
+  border-color: var(--ligthG) !important;
 }
 
 .space {
