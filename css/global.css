@@ -420,6 +420,11 @@ form {
   gap: 30px;
 }
 
+input {
+  border-radius: 10px;
+  border: none;
+}
+
 ::placeholder {
   color: #E4E4E4;
 }
