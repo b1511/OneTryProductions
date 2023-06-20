@@ -34,7 +34,7 @@ function renderPostsHome(posts) {
           <em><p class="light fw-light small">${post.name}</p></em>
           <em><p class="light fw-light small">${post.company}</p></em>
         </div>
-        <img class="logo-rev" src="${post.logo}" alt="logo">
+        <img class="logo-rev" src="${post.logo}" alt="logo" loading="lazy">
       </div>
       
     </article>
@@ -76,7 +76,7 @@ function renderPostsAbout(posts) {
           <em><p class="light fw-light small">${post.name}</p></em>
           <em><p class="light fw-light small">${post.company}</p></em>
         </div>
-        <img class="logo-rev" src="${post.logo}" alt="logo">
+        <img class="logo-rev" src="${post.logo}" alt="logo" loading="lazy">
       </div>
       
     </article>
@@ -105,7 +105,9 @@ getPostsAerial();
 function renderPostsAerial(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="aerial"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}">
+      <img class="photoEl" src="${data[i].acf.image}" alt="aerial" loading="lazy">
+    </a>
     `;
     addHTML("div#aerial", newHTML);
   }
@@ -124,7 +126,9 @@ getPostsProd();
 function renderPostsProd(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="production"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}">
+      <img class="photoEl" src="${data[i].acf.image}" alt="production" loading="lazy">
+    </a>
     `;
     addHTML("div#production", newHTML);
   }
@@ -143,7 +147,9 @@ getPostsAdv();
 function renderPostsAdv(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
-    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}"><img class="photoEl" src="${data[i].acf.image}" alt="advertising"></a>
+    <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}">
+      <img class="photoEl" src="${data[i].acf.image}" alt="advertising" loading="lazy">
+    </a>
     `;
     addHTML("div#advertising", newHTML);
   }
@@ -193,7 +199,7 @@ fetch(urlEvent)
 
       output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl" alt="events">
+                <img src="${thumbnail}" class="photoEl" alt="events" loading="lazy">
             </a>
             `;
 
@@ -213,7 +219,7 @@ fetch(urlLocations)
 
       output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl" alt="locations">
+                <img src="${thumbnail}" class="photoEl" alt="locations" loading="lazy">
             </a>
             `;
 
@@ -233,7 +239,7 @@ fetch(urlMusic)
 
       output = `
             <a data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl" alt="music">
+                <img src="${thumbnail}" class="photoEl" alt="music" loading="lazy">
             </a>
             `;
 
@@ -253,7 +259,7 @@ fetch(urlSport)
 
       output = `
             <a class="big-size" data-fancybox="video-gallery-2" href="${vidURL}">
-                <img src="${thumbnail}" class="photoEl" alt="sport">
+                <img src="${thumbnail}" class="photoEl" alt="sport" loading="lazy">
             </a>
             `;
 
