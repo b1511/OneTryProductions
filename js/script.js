@@ -106,7 +106,7 @@ function renderPostsAerial(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
     <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}">
-      <img class="photoEl" src="${data[i].acf.thumbnail}" alt="aerial" loading="lazy">
+      <img class="photoEl" src="${data[i].acf.thumbnail.url}" alt="aerial" loading="lazy">
     </a>
     `;
     addHTML("div#aerial", newHTML);
@@ -127,7 +127,7 @@ function renderPostsProd(data) {
   for (let i = 0; i < 16; i++) {
     let newHTML = `
     <a data-fancybox="video-gallery-1" data-caption="${data[i].acf.title}" href="${data[i].acf.image}">
-      <img class="photoEl" src="${data[i].acf.image}" alt="production" loading="lazy">
+      <img class="photoEl" src="${data[i].acf.thumbnail.url}" alt="production" loading="lazy">
     </a>
     `;
     addHTML("div#production", newHTML);
